@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <link rel="icon" href="images/favicon.ico">
+
+<!-- bootstrap styles and script -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/1930d88629.js" crossorigin="anonymous"></script>
+</head>  
+
+<body class="bg-light">
+    <!-- navigation  -->
+    <nav class="navbar navbar-expand-lg mb-4 sticky-top bg-light">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand fs-3" href="#">O-INVEST</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#yellow">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="yellow">
+                <ul class="navbar-nav navbar-light ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown" data-bs-theme="dark">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" href="#">Sections</a> 
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#scrollspy">Scrollspy</a></li> 
+                            <li><a class="dropdown-item" href="#shadow-utility">Shadow</a></li> 
+                            <li><a class="dropdown-item" href="#carousel-one">Carousel</a></li> 
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-primary" href="#sign-in-modal"  data-bs-toggle="modal" type="button">Sign-up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Form inside a modal for the newsletter subscription  -->
+    <div class="modal fade" id="sign-in-modal" data-bs-backdrop="static"  tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Subscribe to our newsletter</h4>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h5></h5>
+                    <form role="form">
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Email address</label>
+                            <input name="youremail" type="email" class="form-control" placeholder="Type in your email address">
+                        </div>
+                        <div class="mb-2">
+                            <label for="firstname" class="form-label">First-Name</label>
+                            <input name="yourfirstname" type="text" class="form-control" placeholder="Type in your first-name">      
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal"><a class="dropdown-item" href="http://www.google.com">Subscribe</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- collapse accordion with grid -->
+    <div id="accordion" style="margin: 0 5%;">
+        <div class="row">
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="card">
+                    <div class=card-header>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#collapse-one">Wolf</button>
+                    </div>
+                    <div id="collapse-one" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                           <p>The wolf (Canis lupus;[b] pl.: wolves), also known as the gray wolf or grey wolf, is a large canine native to Eurasia and North America. More than thirty subspecies of Canis lupus have been recognized, including the dog and dingo, though gray wolves, as popularly understood, only comprise naturally-occurring wild subspecies. The wolf is the largest extant member of the family Canidae, and is further distinguished from other Canis species by its less pointed ears and muzzle, as well as a shorter torso and a longer tail.</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        
+            <div class="col-sm-6 col-lg-4">
+                <div class="card">
+                    <div class=card-header>
+                        <a type="button" class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#collapse-two">Horse</a>
+                    </div>
+                    <div id="collapse-two" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <p>The horse (Equus caballus)[2][3] is a domesticated, one-toed, hoofed mammal. It belongs to the taxonomic family Equidae and is one of two extant subspecies of Equus ferus. The horse has evolved over the past 45 to 55 million years from a small multi-toed creature, close to Eohippus, into the large, single-toed animal of today. Humans began domesticating horses around 4000 BCE, and their domestication is believed to have been widespread by 3000 BCE.</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <div class=card-header>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#collapse-three">Kangaroo</button>
+                    </div>
+                    <div id="collapse-three" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <p>Kangaroos are four marsupials from the family Macropodidae (macropods, meaning "large foot"). In common use the term is used to describe the largest species from this family, the red kangaroo, as well as the antilopine kangaroo, eastern grey kangaroo, and western grey kangaroo.[1] Kangaroos are indigenous to Australia and New Guinea. The Australian government estimates that 42.8 million kangaroos lived within the commercial harvest areas of Australia in 2019, down from 53.2 million in 2013.</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        
+        </div>
+    </div>
+<!-- toggleable navtabs with grid system -->
+    <div class="row" style="margin: 0 5%;">
+        <div class="col-md-6">
+            <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#snakes">Snakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#cats">Cats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#monkeys">Monkeys</a>
+                </li>
+            </ul>
+<!-- tab-content -->
+            <div class="tab-content">
+                <div class="tab-pane container active" id="snakes">
+                    Snakes are elongated, limbless, carnivorous reptiles of the suborder Serpentes (/sɜːrˈpɛntiːz/) Like all other squamates, snakes are ectothermic, amniote vertebrates covered in overlapping scales. Many species of snakes have skulls with several more joints than their lizard ancestors, enabling them to swallow prey much larger than their heads (cranial kinesis). To accommodate their narrow bodies, snakes' paired organs (such as kidneys) appear one in front of the other instead of side by side, and most have only one functional lung.
+                </div>
+                <div class="tab-pane container fade" id="cats" >
+                    The cat (Felis catus), commonly referred to as the domestic cat or house cat, is the only domesticated species in the family Felidae. Recent advances in archaeology and genetics have shown that the domestication of the cat occurred in the Near East around 7500 BC. It is commonly kept as a house pet and farm cat, but also ranges freely as a feral cat avoiding human contact. It is valued by humans for companionship and its ability to kill vermin.
+                </div>
+                <div class="tab-pane container fade" id="monkeys">
+                    Monkey is a common name that may refer to most mammals of the infraorder Simiiformes, also known as the simians. Traditionally, all animals in the group now known as simians are counted as monkeys except the apes, thus monkeys (in that sense) constitute an incomplete paraphyletic grouping; however, in the broader sense based on cladistics, apes (Hominoidea) are also included, making the terms monkeys and simians synonyms in regard to their scope
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+<!-- toggleable navtabs 2 -->
+            <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#elephants">Elephants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#dogs">Dogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#lions">Lions</a>
+                </li>
+            </ul>
+<!-- tab-content -->
+            <div class="tab-content">
+                <div class="tab-pane container active" id="elephants">
+                    Elephants are the largest living land animals. Three living species are currently recognised: the African bush elephant (Loxodonta africana), the African forest elephant (L. cyclotis), and the Asian elephant (Elephas maximus). They are the only surviving members of the family Elephantidae and the order Proboscidea; extinct relatives include mammoths and mastodons. Distinctive features of elephants include a long proboscis called a trunk, tusks, large ear flaps, pillar-like legs, and tough but sensitive grey skin. 
+                </div>
+                <div class="tab-pane container fade" id="dogs">
+                    The dog (Canis familiaris[4][5] or Canis lupus familiaris[5]) is a domesticated descendant of the wolf. Also called the domestic dog, it is derived from extinct Pleistocene wolves,[6][7] and the modern wolf is the dog's nearest living relative.[8] The dog was the first species to be domesticated[9][8] by humans. Hunter-gatherers did this, over 15,000 years ago in Germany,[7] which was before the development of agriculture.[1]
+                </div>
+                <div class="tab-pane container fade" id="lions">
+                    The lion (Panthera leo) is a large cat of the genus Panthera native to Africa and India. It has a muscular, broad-chested body; short, rounded head; round ears; and a hairy tuft at the end of its tail. It is sexually dimorphic; adult male lions are larger than females and have a prominent mane. It is a social species, forming groups called prides. A lion's pride consists of a few adult males, related females, and cubs. Groups of female lions usually hunt together, preying mostly on large ungulates.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- carousel 1-->
+<div id="carousel-one" class="carousel slide my-3" data-bs-ride="true" data-bs-interval="4000" data-bs-theme="dark" style="margin:0 5%;">
+
+    <div class="carousel-inner" style="padding:3% 10%;">
+
+        <div class="carousel-item active">
+            <img src="images/elephant.jpg" alt="elephant" class="d-block w-100" style="height:400px;">
+            <div class="carousel-caption text-light">
+                <h6>The painting of an Elephant</h6>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/dog.jpg" alt="dog" class="d-block w-100"  style="height:400px;">
+            <div class="carousel-caption text-light">
+                <h6>The painting of a Dog</h6>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/lion.jpg" alt="lion" class="d-block w-100" style="height:400px;">
+            <div class="carousel-caption text-light">
+                <h6>The painting of a Lion</h6>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/snake.jpg" alt="snake" class="d-block w-100" style="height:400px;">
+            <div class="carousel-caption text-light">
+                <h6>The painting of a Snake</h6>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/cat.jpg" alt="cat" class="d-block w-100" style="height:400px;">
+            <div class="carousel-caption text-light">
+                <h6>The painting of a Cat</h6>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/monkey.jpg" aly="monkey" class="d-block w-100" style="height:400px;">
+            <div class="carousel-caption text-light">
+                <h6>The painting of a Monkey</h6>
+            </div>
+        </div>
+    </div>
+<!-- carousel control -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-one" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-one" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+    
+<!--carousel 2-->
+<div id="carousel-2" class="carousel slide text-dark" data-bs-ride="false" data-bs-theme="dark" style="background-color: #ddd; margin:0 5%;">
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2"></button>
+    </div>
+    
+    <div class="carousel-inner"  style="padding:8% 10%;">
+        <div class="carousel-item active"> What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+        <div class="carousel-item"> Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. </div>
+        <div class="carousel-item"> Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div> 
+
+<!-- Scrollable modal,(tooltip and popovers) they both have to be initialized using javascript-->
+    <div class=" text-center" style="margin:5%;">
+
+        <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">Scrollable modal</button>
+        <div class="modal modal-lg fade" id="mymodal" data-bs-backdrop="static" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Scrollable Modal</h1>
+                    <button class="btn-close" data-bs-dismiss="modal" data-bs-toggle="tooltip" title="dismiss" data-bs-placement="left"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This space will contain the content of this modal</p>
+                    <h3>Some text to enable scrolling..</h3>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+<!--tooltip-->
+        <button class="btn btn-sm btn-secondary" type="button" data-bs-placement="top" data-bs-toggle="tooltip" title="hello world">tooltip</button>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+<!--popover-->
+        <button class="btn btn-sm btn-primary" type="button" data-bs-toggle="popover" data-bs-trigger="hover" title="Reptiles" data-bs-content="Reptiles, as commonly defined, are a group of tetrapods with an ectothermic ('cold-blooded') metabolism and amniotic development." data-bs-placement="top">popover</button>
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>          
+<!-- toggleable modals -->
+        <button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#modal-one">toggleable modals</button>
+        <div class="modal fade" id="modal-one" data-bs-backdrop="static"  tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Modal-one</h1>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This space will contain the content of this modal.
+                        Toggle to the next by clicking on the (next) button below. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#modal-two">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-two" data-bs-backdrop="static"  tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header"> 
+                        <h1 class="modal-title"> Modal-two</h1>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This space will contain the content of this modal.
+                         Return to the previous modal by clicking (Previous) on the button below.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#modal-one">Previous</button>
+                        <button class="btn btn-sm btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- scrollspy -->
+<div class="container-fluid px-5">
+    <div id="scrollspy" data-bs-spy="scroll" data-bs-target="scrollspy" style="position:relative;">
+        <nav class="navbar navbar-dark navbar-expand-sm bg-dark sticky-top px-5" id="scrollspy">
+            <a class="navbar-brand" href="#">scrollspy</a>
+                <div class="container-fluid">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#tiger">Tiger</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#chicken">Chicken</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#penguins">Penguins</a></li> 
+                    </ul>
+                </div> 
+         </nav>
+        <div id="tiger" class="container-fluid text-dark" style="padding:100px 20px; background-color: #ddd;"> 
+                <p>The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange fur with a white underside. An apex predator, it primarily preys on ungulates, such as deer and wild boar. It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat to support its requirements for prey and rearing of its offspring. Tiger cubs stay with their mother for about two years and then become independent, leaving their mother's home range to establish their own.</p>
+        </div>
+        <div id="chicken" class="container-fluid bg-dark text-white" style="padding:100px 20px;">
+                <p>The chicken (Gallus domesticus) is a domesticated species that arose from the red junglefowl, originally from Southeast Asia. They have also partially hybridized with other wild species of junglefowl (the grey junglefowl, Ceylon junglefowl, and green junglefowl).[1] Rooster and cock are terms for adult male birds, and a younger male may be called a cockerel. A male that has been castrated is a capon. An adult female bird is called a hen, and a sexually immature female is called a pullet. Humans keep chickens primarily as a source of food (consuming both their meat and eggs) or as pets. Traditionally, they were also bred for cockfighting, which is still practiced in some places. Chickens domesticated for meat are broilers, and for eggs, they are layers.</p>
+        </div>
+        <div id="penguins" class="container-fluid text-dark" style="padding:100px 20px; background-color: #ddd;">
+                <p>Penguins are a group of aquatic flightless birds from the order Sphenisciformes (/sfɪˈnɪsəfɔːrmiːz/) of the family Spheniscidae (/sfɪˈnɪsɪdiː, -daɪ/).[4] They live almost exclusively in the Southern Hemisphere: only one species, the Galápagos penguin, is found north of the Equator. Highly adapted for life in the ocean water, penguins have countershaded dark and white plumage and flippers for swimming. Most penguins feed on krill, fish, squid and other forms of sea life which they catch with their bills and swallow whole while swimming. A penguin has a spiny tongue and powerful jaws to grip slippery prey.[5]</p>
+        </div>
+    </div>
+</div>
+<!-- offcanvas with a toast-->
+        <div class="offcanvas offcanvas-end show" data-bs-scroll="true" tabindex="-1" data-bs-theme="dark">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title">Welcome</h3>
+                <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>This website is nothing more than a code playground created during my study sessions. It was not particularly beautiful or well-designed, but it nevertheless made learning much simpler for me.</p>
+                <p>By the way, this is an offcanvas with a toast in it.</p>
+                <div class="toast show" style="margin-top: 70%;">
+                    <div class="toast-header">
+                        <h6>Alert</h6>
+                        <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">
+                    <p>95% of the content on this website is related to animals.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- using the shadow utility classes -->
+        <div class="p-3" id="shadow-utility" style="margin: 5% 5% 0;">
+            <div class="p-4 mb-2 bg-white shadow-none">
+                <h5>Wolf</h5>
+                <p>The wolf (Canis lupus;[b] pl.: wolves), also known as the gray wolf or grey wolf, is a large canine native to Eurasia and North America. More than thirty subspecies of Canis lupus have been recognized, including the dog and dingo, though gray wolves, as popularly understood, only comprise naturally-occurring wild subspecies. The wolf is the largest extant member of the family Canidae, and is further distinguished from other Canis species by its less pointed ears and muzzle, as well as a shorter torso and a longer tail. The wolf is nonetheless related closely enough to smaller Canis species, such as the coyote and the golden jackal, to produce fertile hybrids with them. The wolf's fur is usually mottled white, brown, gray, and black, although subspecies in the arctic region may be nearly all white.</p>
+            </div>
+            <div class="p-4 mb-2 bg-white shadow-sm">
+                <h5>Gorilla</h5>
+                <p>Gorillas are herbivorous, predominantly ground-dwelling great apes that inhabit the tropical forests of equatorial Africa. The genus Gorilla is divided into two species: the eastern gorilla and the western gorilla, and either four or five subspecies. The DNA of gorillas is highly similar to that of humans, from 95 to 99% depending on what is included, and they are the next closest living relatives to humans after chimpanzees and bonobos.Gorillas are the largest living primates, reaching heights between 1.25 and 1.8 metres, weights between 100 and 270 kg, and arm spans up to 2.6 metres, depending on species and sex.</p>
+            </div>
+            <div class="p-4 mb-2 bg-white shadow">
+                <h5>Zebra</h5>
+                <p>Zebras (US: /ˈziːbrəz/, UK: /ˈzɛbrəz, ˈziː-/)[1] (subgenus Hippotigris) are African equines with distinctive black-and-white striped coats. There are three living species: Grévy's zebra (Equus grevyi), the plains zebra (E. quagga), and the mountain zebra (E. zebra). Zebras share the genus Equus with horses and asses, the three groups being the only living members of the family Equidae. Zebra stripes come in different patterns, unique to each individual. Several theories have been proposed for the function of these stripes, with most evidence supporting them as a deterrent for biting flies. Zebras inhabit eastern and southern Africa and can be found in a variety of habitats such as savannahs, grasslands, woodlands, shrublands, and mountainous areas.</p>
+            </div>
+            <div class="p-4 mb-2 bg-white text-dark shadow-lg">
+                <h5>Bird</h5>
+                <p>Birds are a group of warm-blooded vertebrates constituting the class Aves (/ˈeɪviːz/), characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton. Birds live worldwide and range in size from the 5.5 cm (2.2 in) bee hummingbird to the 2.8 m (9 ft 2 in) common ostrich. There are over 11,000 living species, more than half of which are passerine, or "perching" birds. Birds have wings whose development varies according to species; the only known groups without wings are the extinct moa and elephant birds. Wings, which are modified forelimbs, gave birds the ability to fly, although further evolution has led to the loss of flight in some birds, including ratites, penguins, and diverse endemic island species.</p>
+            </div>
+        </div>
+
+<!-- footer -->
+    <footer id="footer" class="p-5" style="background-color: #fff;">
+        <div class="text-center">
+            <i class="fa-brands fa-x-twitter footer-icon m-2"></i> 
+            <i class="fa-brands fa-facebook-f footer-icon m-2"></i>
+            <i class="fa-brands fa-instagram footer-icon m-2"></i>
+            <i class="fa-solid fa-envelope footer-icon m-2"></i>
+            <p>© Copyright O-invest</p>
+        </div>
+    </footer>
+</body>
+</html>
